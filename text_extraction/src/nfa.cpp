@@ -1,12 +1,13 @@
 #include <math.h>
+//#include <cmath>
 #include <float.h>
 
 /*----------------------------------------------------------------------------*/
 /** Doubles relative error factor
  */
 #define RELATIVE_ERROR_FACTOR 100.0
-
-
+//很奇怪的问题,M_LN10已经在math.h中定义了,但是vs编译时报错
+#define M_LN10     2.30258509299404568402
 /*----------------------------------------------------------------------------*/
 /** Compare doubles by relative error.
 

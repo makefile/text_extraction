@@ -1,5 +1,9 @@
-text_extraction
-===============
+## text_extraction
+Compile env: VS2013
+Usage: view the main.cpp for detail.
+Can be compiled to .exe or .dll .
+
+------------
 
 This code is the implementation of the method proposed in the paper “Multi-script text extraction from natural scenes” (Gomez &amp; Karatzas), International Conference on Document Analysis and Recognition, ICDAR2013.
 

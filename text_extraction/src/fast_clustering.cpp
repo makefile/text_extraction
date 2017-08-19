@@ -437,7 +437,7 @@ static void NN_chain_core(const t_index N, t_float * const D, t_members * const 
 
   t_index idx1, idx2;
 
-  t_float size1, size2;
+  t_float size1=0, size2=0;
   doubly_linked_list active_nodes(N);
 
   t_float min;
@@ -656,7 +656,8 @@ public:
     // Complexity: Θ(size)
     // Reference: Cormen, Leiserson, Rivest, Stein, Introduction to Algorithms,
     // 3rd ed., 2009, Section 6.3 “Building a heap”
-    t_index idx;
+    //t_index idx;
+	int idx;
     this->A = A;
     for (idx=(size>>1); idx>0; ) {
       idx--;
@@ -779,7 +780,7 @@ static void generic_linkage(const t_index N, t_float * const D, t_members * cons
                                      // to the nearest neighbor of each point
 
   t_index node1, node2;     // node numbers in the output
-  t_float size1, size2;     // and their cardinalities
+  t_float size1=0, size2=0;     // and their cardinalities
 
   t_float min; // minimum and row index for nearest-neighbor search
   t_index idx;

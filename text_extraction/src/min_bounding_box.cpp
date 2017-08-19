@@ -1,6 +1,6 @@
 
 #include "min_bounding_box.h"
-  
+#include <algorithm>
 Minibox::Minibox()
 {
 	initialized = false;

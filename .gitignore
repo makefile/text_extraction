@@ -6,5 +6,10 @@ CMakeCache.txt
 CMakeFiles
 Makefile
 cmake_install.cmake
-text_extraction
 
+# windows
+Debug/
+x64/
+*.sdf
+text_extraction/Debug/
+text_extraction/x64/
